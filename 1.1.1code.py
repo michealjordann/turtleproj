@@ -1,6 +1,6 @@
 import turtle as trtl
 painter = trtl.Turtle()
-
+painter.speed(100)
 
 
 #house square structure walls thingy idk????
@@ -98,11 +98,51 @@ painter.circle(-10)
 painter.end_fill()
 painter.forward(45)
 painter.penup()
-painter.goto((-30,-90))
+#to do: color car and make car door maybe, sun, stick figs
 
-#to do: color car and make door maybe, sun, stick figs
+#sun
+painter.goto((150,100))
+painter.pencolor("yellow")
+painter.pendown()
+painter.fillcolor("yellow")
+painter.begin_fill()
+painter.circle(25)
+painter.end_fill()
 
-
+#people
+painter.penup()
+painter.goto((120,-100))
+painter.pencolor("black")
+for each in range(3):
+  painter.left(45)
+  painter.pendown()
+  painter.forward(30)
+  painter.right(90)
+  painter.forward(30)
+  painter.penup()
+  painter.backward(30)
+  painter.left(135)
+  painter.pendown()
+  painter.forward(35)
+  painter.penup()
+  painter.backward(15)
+  painter.right(90)
+  painter.pendown()
+  painter.forward(20)
+  painter.backward(40)
+  painter.penup()
+  painter.forward(20)
+  painter.left(90)
+  painter.forward(15)
+  painter.pendown()
+  painter.right(90)
+  painter.circle(10)
+  painter.penup()
+  painter.forward(55)
+  painter.right(90)
+  painter.forward(60)
+  painter.left(90)
+  painter.pendown()
 
 #something?
 wn = trtl.Screen()
